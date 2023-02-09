@@ -100,25 +100,25 @@ class Router {
 			}
 	  
 			 post(pathName,middlewares){
-				   this.#setRoute(pathName,"POST",...middlewares)
+				   this.#setRoute(pathName,"POST",middlewares)
 			}
 
 			delete(pathName,middlewares){
-				   this.#setRoute(pathName,"DELETE",...middlewares)
+				   this.#setRoute(pathName,"DELETE",middlewares)
 			}
 	     
 			patch(pathName,middlewares){
-				  this.#setRoute(pathName,"PATCH",...middlewares)
+				  this.#setRoute(pathName,"PATCH",middlewares)
 			}
 			
 			put(pathName,middlewares){
-				  this.#setRoute(pathName,"PUT",...middlewares)
+				  this.#setRoute(pathName,"PUT",middlewares)
 
 			}
 
 			all(pathName,...middlewares){
 				  for( let requestMethod of ["GET","POST","DELETE","PUT","PATCH"]){
-						this.#setRoute(pathName,requestMethod,...middlewares)
+						this.#setRoute(pathName,requestMethod,middlewares)
 				  }
 			}
 	  		use(...args) {
@@ -197,8 +197,7 @@ class Router {
 	  startRouting(request,response){
 				  this.#upgradeRequest(request)
 				  this.#upgradeResponse(response)
-				  this.#fireMiddlewares(request,response,this.#middlewares)
-			console.log("yes1")
+				  this.#fireMiddlewares(request,response,this.#middlewares)	
 				  this.#routeing(request, response)	
 			}
 
