@@ -1,0 +1,19 @@
+{
+  "name": "os-management-dashboard",
+  "version": "1.0.0",
+  "description": "simple os management dash for manageing operateing system resources",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crypt00o/OS-Mangement-Dashboard-Base.git"
+  },
+  "author": "Crypt00o",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Crypt00o/OS-Mangement-Dashboard-Base/issues"
+  },
+  "homepage": "https://github.com/Crypt00o/OS-Mangement-Dashboard-Base#readme"
+}
