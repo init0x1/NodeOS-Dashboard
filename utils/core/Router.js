@@ -87,7 +87,7 @@ class Router {
 
 			}
 
-
+			
 			#setRoute(pathName,requestMethod,middlewares){
 				  this.#validateTypes(pathName,middlewares)
 				  this.#createRouteIfNotExists(pathName)
@@ -99,19 +99,19 @@ class Router {
 				  this.#setRoute(pathName,"GET",middlewares)
 			}
 	  
-			 post(pathName,middlewares){
+			 post(pathName,...middlewares){
 				   this.#setRoute(pathName,"POST",middlewares)
 			}
 
-			delete(pathName,middlewares){
+			delete(pathName,...middlewares){
 				   this.#setRoute(pathName,"DELETE",middlewares)
 			}
 	     
-			patch(pathName,middlewares){
+			patch(pathName,...middlewares){
 				  this.#setRoute(pathName,"PATCH",middlewares)
 			}
 			
-			put(pathName,middlewares){
+			put(pathName,...middlewares){
 				  this.#setRoute(pathName,"PUT",middlewares)
 
 			}
@@ -123,7 +123,7 @@ class Router {
 			}
 	  		use(...args) {
 				  
-			  args.forEach((arg,index)=>{
+			  args.forEach((arg)=>{
 	  			 switch(typeof arg ){
 									case "function" :
 										  this.#middlewares.push(args[0])
