@@ -1,19 +1,18 @@
 {
-  "name": "os-management-dashboard",
+  "name": "nodeos-dashboard",
   "version": "1.0.0",
-  "description": "simple os management dash for manageing operateing system resources",
+  "description": "managing and monitoring your operating system using an HTTP server built with NodeJS.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Crypt00o/OS-Management-Dashboard-Base.git"
+    "url": "git+https://github.com/0xAbdoAli/NodeOS-Dashboard.git"
   },
-  "author": "Crypt00o",
-  "license": "GPL-3.0-or-later",
+  "author": "0xAbdoAli",
   "bugs": {
-    "url": "https://github.com/Crypt00o/OS-Management-Dashboard-Base/issues"
+    "url": "https://github.com/0xAbdoAli/NodeOS-Dashboard/issues"
   },
-  "homepage": "https://github.com/Crypt00o/OS-Management-Dashboard-Base#readme"
+  "homepage": "https://github.com/0xAbdoAli/NodeOS-Dashboard#readme"
 }
